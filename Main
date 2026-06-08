@@ -1,0 +1,60 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package app;
+
+import model.Cliente;
+import model.Direccion;
+import model.Empleado;     
+
+public class LLanquihueTour {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        
+        Direccion direccioncliente1 = new Direccion("San Martin" , 420, "Lanquihue", "Region de los Lagos");
+        Cliente cliente1 = new Cliente( direccioncliente1, "Mario Vera", "15.956.486-4");
+        Empleado empleado1 = new Empleado("Administrador", "Ana Martinez", "15.349.246-4");
+        
+        
+        Direccion direccioncliente2 = new Direccion("Av. circunvalacion" , 1787, "Melipilla", "Region Metropolitana");
+        Cliente cliente2 = new Cliente( direccioncliente2, "Jose Morel", "20.311.021-9");
+        Empleado empleado2 = new Empleado("Guia de Trekking", "Jorge Mendez", "20.619.648-4");
+        
+        
+        Direccion direccioncliente3 = new Direccion("Bernando Santander" , 95, "San Anotinio", "Region de Valparaiso");
+        Cliente cliente3 = new Cliente( direccioncliente3, "Sonia Santis", "11.315.942-4");
+        Empleado empleado3 = new Empleado("Guia Turistica", "Nicole Fuenzalida", "18.649.164-0");
+        
+        System.out.println("=== SISTEMA DE REGISTRO ===");
+        
+        System.out.println("= DATOS CLIENTE =");
+        cliente1.mostrarInformacion();
+        System.out.println();
+        System.out.println("= DATOS EMPLEADO =");
+        empleado1.mostrarInformacion();
+        System.out.println();
+        System.out.println("-------------------");
+        
+        System.out.println("= DATOS CLIENTE =");
+        cliente2.mostrarInformacion();
+        System.out.println();
+        System.out.println("= DATOS EMPLEADO =");
+        empleado2.mostrarInformacion();
+        System.out.println();
+        System.out.println("-------------------");
+        
+        System.out.println("= DATOS CLIENTE =");
+        cliente3.mostrarInformacion();
+        System.out.println();
+        System.out.println("= DATOS EMPLEADO =");
+        empleado3.mostrarInformacion();
+        System.out.println();
+        System.out.println("-------------------");
+    }
+    
+}
